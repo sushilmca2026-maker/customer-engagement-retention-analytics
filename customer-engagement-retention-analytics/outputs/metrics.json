@@ -1,0 +1,140 @@
+{
+  "quality": {
+    "rows": 10000,
+    "columns": 22,
+    "missing_cells": 0,
+    "duplicate_customer_ids": 0,
+    "binary_fields_valid": true,
+    "source_columns": [
+      "Year",
+      "CustomerId",
+      "Surname",
+      "CreditScore",
+      "Geography",
+      "Gender",
+      "Age",
+      "Tenure",
+      "Balance",
+      "NumOfProducts",
+      "HasCrCard",
+      "IsActiveMember",
+      "EstimatedSalary",
+      "Exited"
+    ]
+  },
+  "metrics": {
+    "customers": 10000,
+    "overall_churn_rate": 20.37,
+    "active_churn_rate": 14.27,
+    "inactive_churn_rate": 26.85,
+    "engagement_retention_ratio": 1.88,
+    "active_vs_inactive_churn_gap_pp": 12.58,
+    "one_product_churn_rate": 27.71,
+    "multi_product_churn_rate": 12.77,
+    "product_depth_retention_lift_pp": 14.94,
+    "high_balance_threshold": 127644.24,
+    "high_balance_disengagement_rate": 12.47,
+    "premium_risk_customers": 1247,
+    "premium_risk_churn_rate": 30.47,
+    "credit_card_churn_rate": 20.18,
+    "no_credit_card_churn_rate": 20.81,
+    "sticky_customer_rate": 18.32,
+    "sticky_customer_churn_rate": 9.12
+  },
+  "tables": {
+    "activity": [
+      {
+        "ActivityLabel": "Active",
+        "customers": 5151,
+        "churn_rate": 0.14269073966220153,
+        "avg_balance": 75875.42214521453
+      },
+      {
+        "ActivityLabel": "Inactive",
+        "customers": 4849,
+        "churn_rate": 0.26850897092183956,
+        "avg_balance": 77134.37686327078
+      }
+    ],
+    "products": [
+      {
+        "NumOfProducts": 1,
+        "customers": 5084,
+        "churn_rate": 0.27714398111723054,
+        "avg_balance": 98551.87061369
+      },
+      {
+        "NumOfProducts": 2,
+        "customers": 4590,
+        "churn_rate": 0.07581699346405228,
+        "avg_balance": 51879.14581263617
+      },
+      {
+        "NumOfProducts": 3,
+        "customers": 266,
+        "churn_rate": 0.8270676691729323,
+        "avg_balance": 75458.32819548872
+      },
+      {
+        "NumOfProducts": 4,
+        "customers": 60,
+        "churn_rate": 1.0,
+        "avg_balance": 93733.135
+      }
+    ],
+    "profiles": [
+      {
+        "EngagementProfile": "Active multi-product",
+        "customers": 2588,
+        "churn_rate": 0.09659969088098919,
+        "avg_balance": 53071.2611901082,
+        "avg_products": 2.0660741885625966
+      },
+      {
+        "EngagementProfile": "Active low-product",
+        "customers": 2563,
+        "churn_rate": 0.18923136948888022,
+        "avg_balance": 98902.01931720639,
+        "avg_products": 1.0
+      },
+      {
+        "EngagementProfile": "Other",
+        "customers": 1909,
+        "churn_rate": 0.14405447878470404,
+        "avg_balance": 33510.03017286537,
+        "avg_products": 2.0827658459926663
+      },
+      {
+        "EngagementProfile": "Inactive low-product",
+        "customers": 1693,
+        "churn_rate": 0.3821618428824572,
+        "avg_balance": 73495.81758417012,
+        "avg_products": 1.0
+      },
+      {
+        "EngagementProfile": "Inactive high-balance",
+        "customers": 1247,
+        "churn_rate": 0.30473135525260625,
+        "avg_balance": 148857.6797433841,
+        "avg_products": 1.3817161186848437
+      }
+    ],
+    "geography": [
+      {
+        "Geography": "France",
+        "customers": 5014,
+        "churn_rate": 0.16154766653370561
+      },
+      {
+        "Geography": "Germany",
+        "customers": 2509,
+        "churn_rate": 0.32443204463929853
+      },
+      {
+        "Geography": "Spain",
+        "customers": 2477,
+        "churn_rate": 0.1667339523617279
+      }
+    ]
+  }
+}
